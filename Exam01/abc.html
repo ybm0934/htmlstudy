@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        #wrap {
+            text-align: center;
+        }
+
+        #tb1 {
+            border-collapse: collapse;
+            margin: 0 auto;
+        }
+
+        #tb1 tr th,
+        tr td {
+            border: 1px solid black;
+            padding: 30px;
+        }
+
+        .btn{
+            width: 100px;
+            height: 50px;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        function show(){
+            with(document){
+                var kor = parseInt(fm.kor.value);
+                var eng = parseInt(fm.eng.value);
+                var mat = parseInt(fm.mat.value);
+                var sum = kor + eng + mat;
+                var avg = sum / 3;
+
+                getElementById('re_sum').value = sum;
+                getElementById('re_avg').value = avg;
+
+                var str = '[성적표]\r\n';
+                str += '국어 점수 : ' + kor + '\r\n';
+                str += '영어 점수 : ' + eng + '\r\n';
+                str += '수학 점수 : ' + mat + '\r\n';
+                str += '총 점수 : ' + sum + '\r\n';
+                str += '평균 점수 : ' + avg.toFixed(2) + '\r\n';
+
+                alert(str);
+
+                fm.submit();
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <form name="fm" method="get" action="bin.html">
+        <div id="wrap">
+            <h1>성적 입력</h1>
+            <table id="tb1">
+                <tr>
+                    <th>국어</th>
+                    <td>
+                        <input type="text" name="kor" id="kor">
+                    </td>
+                </tr>
+                <tr>
+                    <th>영어</th>
+                    <td>
+                        <input type="text" name="eng" id="eng">
+                    </td>
+                </tr>
+                <tr>
+                    <th>수학</th>
+                    <td>
+                        <input type="text" name="mat" id="mat">
+                    </td>
+                </tr>
+                <tr>
+                    <th colspan="2">
+                        <input type="button" class="btn" id="sum" value="계산" onclick="show()">
+                        <input type="button" class="btn" id="cancel" value="취소">
+                    </th>
+                </tr>
+            </table>
+            <input type="hidden" id="re_sum" value="0">
+            <input type="hidden" id="re_avg" value="0">
+        </div>
+    </form>
+</body>
+
+</html>

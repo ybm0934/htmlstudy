@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        function aa() {
+            document.fm.reset();
+        }
+        function bb() {
+            document.fm.submit();
+        }
+        function cc() {
+            document.fm.id.select();
+        }
+        function dd() {
+            document.fm.pw.focus();
+        }
+    </script>
+</head>
+
+<body>
+    <form name="fm">
+        아이디 <input type="text" name="id">
+        비번 <input type="password" name="pw">
+        <input type="button" name="a" onclick="aa();" value="reset">
+        <input type="button" name="b" onclick="bb();" value="submit">
+        <input type="button" name="c" onclick="cc();" value="select">
+        <input type="button" name="d" onclick="dd();" value="focus">
+    </form>
+</body>
+
+</html>

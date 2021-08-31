@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>자식창</title>
+    <script>
+        function que(){
+            var zip1 = document.getElementById('zip1').value;
+            var zip2 = document.getElementById('zip2').value;
+            var addr1 = document.getElementById('addr1').value;
+
+            opener.document.getElementById('zip1').value = zip1;
+            opener.document.getElementById('zip2').value = zip2;
+            opener.document.getElementById('addr1').value = addr1;
+            
+            self.close();
+        }
+        
+        function winmsg(msg){
+            opener.document.getElementById('zip1').innerText = msg;
+            opener.document.getElementById('zip2').value = msg;
+            opener.document.getElementById('addr1').value = msg;
+        }
+    </script>
+</head>
+<body>
+    우편번호 <input type="text" name="zip1" id="zip1" onkeypress="winmsg(this.value);">
+     - <input type="text" name="zip2" id="zip2">
+    주소1 <input type="text" name="addr1" id="addr1">
+    <input type="button" value="확인" onclick="que();">
+    <input type="button" value="닫기" onclick="self.close();">
+</body>
+</html>
