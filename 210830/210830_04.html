@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>시계 테스트</title>
+    <script>
+        setInterval(function () {
+            printClock();
+        }, 1000);
+
+        function printClock() {
+            var now = new Date();
+
+            var hour = now.getHours();
+            var minute = now.getMinutes();
+            var second = now.getSeconds();
+            var str1 = '한국 표준시(KST) : ' + hour + '시 ' + minute + '분 ' + second + '초 입니다.';
+            var str2 = '뉴욕 시간(EST) : ' + (hour - 5) + '시 ' + minute + '분 ' + second + '초 입니다.';
+            var str3 = '영국 표준시(GMT) : ' + (hour - 9) + '시 ' + minute + '분 ' + second + '초 입니다.';
+
+            document.getElementById('h1').innerHTML = str1 + '<br><br>' + str2 + '<br><br>' + str3;
+
+            var arr = new Array(6);
+
+            for (var i = 0; i < arr.length; i++) {
+                arr[i] = Math.floor(Math.random() * 45 + 1);
+                for (var j = 0; j < i; j++) {
+                    if (arr[i] == arr[j]) {
+                        i--;
+                    }
+                }
+            } // for
+
+            for (var i = 0; i < arr.length; i++) {
+                for (var j = i + 1; j < arr.length; j++) {
+                    if (arr[i] > arr[j]) {
+                        var temp = arr[i];
+                        arr[i] = arr[j];
+                        arr[j] = temp;
+                    }
+                }
+            } // for
+
+            document.getElementById('h2').innerHTML = '[로또 번호]<br><br>' + arr;
+        }
+    </script>
+</head>
+
+<body onload="printClock()">
+    <h1 id="h1"></h1>
+    <br><br>
+    <h2 id="h2"></h2>
+</body>
+
+</html>

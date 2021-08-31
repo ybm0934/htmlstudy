@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>전광판 실습 2</title>
+    <script>
+        setInterval(function () {
+            notice();
+        }, 200);
+
+        var str = '지각, 결석을 하지 맙시다....';
+        var str2 = '';
+        var one = '';
+        var cnt = 0;
+
+        function notice() {
+            one = str.charAt(cnt);
+            str2 += one;
+
+            document.getElementById('div').innerHTML = str2;
+
+            if (cnt == str.length) {
+                cnt = 0;
+                str2 = '';
+            } else {
+                cnt++;
+            }
+        }
+    </script>
+</head>
+
+<body onload="notice();">
+    <h1>공지사항 : </h1>
+    <div id="div" style="border:1px solid black; width:300px; height: 30px;"></div>
+</body>
+
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Test</title>
+    <link rel="stylesheet" type="text/css" href="cssTest.css">
+    <script>
+
+        function regit() {
+            with (document) {
+                var user = getElementById('sec2_box').value;
+                var textarea = getElementById('textarea').value;
+                var now = new Date();
+                var year = now.getFullYear();
+                var month = now.getMonth();
+                var day = now.getDate();
+                var hour = now.getHours();
+                var minute = now.getMinutes();
+                var second = now.getSeconds();
+                var sysdate = year + '.' + (month + 1) + '.' + day + '. ' + hour + ':' + minute + ':' + second;
+
+                var tr = createElement('tr');
+                tr.setAttribute('id', 'tr_x');
+                var td = createElement('td');
+                var td2 = createElement('td');
+                var td3 = createElement('td');
+                var td4 = createElement('td');
+                var td5 = createElement('td');
+                var node = createTextNode(user);
+                var node2 = createTextNode(textarea);
+                var node3 = createTextNode(sysdate);
+                var node4 = createElement('input');
+                node4.setAttribute('type', 'button');
+                node4.setAttribute('class', 'like_btn');
+                node4.setAttribute('value', 'Like');
+                tr.appendChild(td);
+                td.appendChild(node); 
+                tr.appendChild(td2);
+                td2.appendChild(node2);
+                tr.appendChild(td3);
+                td3.appendChild(node3);
+                tr.appendChild(td4);
+                td4.appendChild(node4);
+
+                getElementById('sec1_tbody').appendChild(tr);
+                
+                getElementById('sec2_box').value = '';
+                getElementById('textarea').value = '';
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>HTML TEST HOME PAGE</h1>
+    </header>
+    <nav class="menu_wrap">
+        <ul class="dep1">
+            <li>
+                <a href="#">JAVA</a>
+                <ul class="dep2">
+                    <li>
+                        <a href="#">Web Basic</a>
+                    </li>
+                    <li>
+                        <a href="#">코딩수학</a>
+                    </li>
+                    <li>
+                        <a href="#">Deep Learning</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">ORACLE</a>
+                <ul class="dep2">
+                    <li>
+                        <a href="#">HTML</a>
+                    </li>
+                    <li>
+                        <a href="#">HTML Tag</a>
+                    </li>
+                    <li>
+                        <a href="#">PHP</a>
+                    </li>
+                    <li>
+                        <a href="#">PYTHON</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">HTML</a>
+                <ul class="dep2">
+                    <li>
+                        <a href="#">JQuery</a>
+                    </li>
+                    <li>
+                        <a href="#">XML</a>
+                    </li>
+                    <li>
+                        <a href="#">AJAX</a>
+                    </li>
+                    <li>
+                        <a href="#">JSON</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">CSS</a>
+                <ul class="dep2">
+                    <li>
+                        <a href="#">JAVA</a>
+                    </li>
+                    <li>
+                        <a href="#">C</a>
+                    </li>
+                    <li>
+                        <a href="#">C++</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">JAVASCRIPT</a>
+                <ul class="dep2">
+                    <li>
+                        <a href="#">코딩지도사</a>
+                    </li>
+                    <li>
+                        <a href="#">코딩전문가</a>
+                    </li>
+                    <li>
+                        <a href="#">딥러닝</a>
+                    </li>
+                    <li>
+                        <a href="#">개정판</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <aside>
+    </aside>
+    <article class="main_article">
+        <section class="main_section1">
+            <table id="sec1_tb">
+                <thead>
+                    <tr>
+                        <th style="width:10%;">작성자</th>
+                        <th style="width:50%;">내 용</th>
+                        <th style="width:20%;">날 짜</th>
+                        <th style="width:10%;">좋아요</th>
+                        <th style="width:10%;">추천수</th>
+                    </tr>
+                </thead>
+                <tfoot></tfoot>
+                <tbody id="sec1_tbody"></tbody>
+            </table>
+        </section>
+        <section class="main_section2">
+            <table id="sec2_tb">
+                <thead></thead>
+                <tfoot></tfoot>
+                <tbody>
+                    <tr>
+                        <th style="width: 20%; vertical-align: bottom;">작성자</th>
+                        <td rowspan="2">
+                            <textarea id="textarea"></textarea>
+                        </td>
+                        <td rowspan="2" style="width: 10%;">
+                            <button id="sec2_tb_btn" onclick="regit()">등록</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <input type="text" name="user" class="sec2_box" id="sec2_box" autofocus>
+                        </th>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </article>
+    <footer></footer>
+</body>
+
+</html>

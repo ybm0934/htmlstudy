@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>반복문 실습2</title>
+    <style>
+        body{
+            text-align: center;
+        }
+
+        #table1{
+            width: 500px;
+            height: 500px;
+            margin: 0 auto;
+            cursor: pointer;
+        }
+
+        #table1 tr td{
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        #table1 tr td:hover{
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>9행 8열 테이블</h1>
+    <table id="table1">
+        <script>
+            var cnt = 1;
+            for (var i = 1; i <= 9; i++) {
+                document.write('<tr>');
+                for (var j = 1; j <= 9; j++) {
+                    document.write('<td>');
+                    document.write((i+1) * j);
+                    document.write('</td>');
+                }
+                document.write('</tr>');
+            }
+        </script>
+    </table>
+</body>
+
+</html>

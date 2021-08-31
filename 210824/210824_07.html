@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Table Test</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+    <table id="table1">
+        <thead>
+            <th colspan="2">회원 가입은 무료입니다.</th>
+        </thead>
+        <tfoot>
+            <tr>
+                <th colspan="2">
+                    <button name="send" class="foot_btn" id="send">전송</button>
+                    <button name="reset" class="foot_btn" id="reset">재입력</button>
+                </th>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <th>회원 ID</th>
+                <td>
+                    <input type="text" name="userid" id="userid" maxlength="10">
+                    <span style="font-size: 0.8em;">영문/숫자 3~8글자, 한글 2~4글자</span>
+                </td>
+            </tr>
+            <tr>
+                <th>비밀번호</th>
+                <td>
+                    <input type="password" name="userpw" id="userpw" maxlength="20">
+                    <span style="font-size: 0.8em;">영문/숫자 조합으로 4~9자</span>
+                </td>
+            </tr>
+            <tr>
+                <th>비밀번호 확인</th>
+                <td><input type="password" name="userpw" id="userpw2" maxlength="20"></td>
+            </tr>
+            <tr>
+                <th>성명</th>
+                <td><input type="text" name="name" id="name" maxlength="10"></td>
+            </tr>
+            <tr>
+                <th>성별</th>
+                <td>
+                    <label for="gender">
+                        <input type="radio" name="gender" id="gender">남
+                    </label>
+                    <label for="gender2">
+                        <input type="radio" name="gender" id="gender2">여
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <th>주민등록번호</th>
+                <td>
+                    <input type="number" name="jumin" id="jumin1">
+                    <span>-</span>
+                    <input type="number" name="jumin" id="jumin2">
+                    <span style="font-size: 0.8em;">예)123456-1234567</span>
+                </td>
+            </tr>
+            <tr>
+                <th>생년월일</th>
+                <td>
+                    <input type="text" name="birth" id="birth1">
+                    <span>년</span>
+                    <input type="text" name="birth" id="birth2">
+                    <span>월</span>
+                    <input type="text" name="birth" id="birth3">
+                    <span>일</span>
+                    <label for="solar">
+                        <input type="radio" name="yinyang" id="solar">양력
+                    </label>
+                    <label for="lunar">
+                        <input type="radio" name="yinyang" id="lunar">음력
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <th>E-mail</th>
+                <td>
+                    <input type="text" name="email" id="email1">
+                    <span>@</span>
+                    <input type="text" name="email" id="email2">
+                </td>
+            </tr>
+            <tr>
+                <th>우편번호</th>
+                <td>
+                    <input type="text" name="zipcode" id="zipcode1">
+                    <span>-</span>
+                    <input type="text" name="zipcode" id="zipcode2">
+                </td>
+            </tr>
+            <tr>
+                <th>주소</th>
+                <td>
+                    <input type="text" name="address" id="address">
+                </td>
+            </tr>
+            <tr>
+                <th>전화번호</th>
+                <td>
+                    <input type="text" name="tel" id="tel1">
+                    <span>-</span>
+                    <input type="text" name="tel" id="tel2">
+                    <span>-</span>
+                    <input type="text" name="tel" id="tel3">
+                </td>
+            </tr>
+            <tr>
+                <th>H.P번호</th>
+                <td>
+                    <select id="phone1">
+                        <option value="010">010</option>
+                        <option value="011">011</option>
+                        <option value="012">012</option>
+                        <option value="013">013</option>
+                        <option value="014">014</option>
+                        <option value="015">015</option>
+                    </select>
+                    <span>-</span>
+                    <input type="text" name="phone" id="phone2">
+                    <span>-</span>
+                    <input type="text" name="phone" id="phone3">
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

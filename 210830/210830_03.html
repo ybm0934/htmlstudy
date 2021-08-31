@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>배열 테스트 3</title>
+    <script type="text/javascript">
+
+        setInterval(function () {
+            printNotice();
+        }, 1000);
+
+        function printNotice() {
+            var notice = new Array(5);
+
+            notice[0] = '지각, 결석을 하지 맙시다.';
+            notice[1] = '복습을 철저히 합시다.';
+            notice[2] = '건강 관리 유의합시다.';
+            notice[3] = '밥 잘 챙겨 먹읍시다.';
+            notice[4] = '부정 출결 하지 맙시다.';
+
+            /*
+                Math 내장클래스 제공
+                1. Math.random() : 0.0 ~ 1.0 무수한 난수
+                Math.random() * 범위 + 시작
+                2. Math.floor() : 현재 자신의 실수에 가장 가까운 작은 정수로 변환
+                3. Math.ceil() : 현재 자신의 실수에 가장 가까운 큰 정수를 반환
+
+                ex) Math.floor(4.5) → 4;
+                    Math.ceil(4.5) → 5;
+                    Math.floor(-4.5) → -5;
+                    Math.ceil(-4.5) → -4;
+            */
+
+            var no = Math.floor(Math.random() * 5);
+
+            document.getElementById('word').innerText = notice[no];
+        }
+
+    </script>
+</head>
+
+<body onload="printNotice()">
+    <div style="border:2px solid darkblue; width:350px; height:50px; font-size:30px;" id="word">
+
+    </div>
+</body>
+
+</html>

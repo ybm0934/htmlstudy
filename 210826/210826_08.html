@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>시험 성적 결과 조회 프로그램</title>
+    <link rel="stylesheet" type="text/css" href="210826_08.css">
+    <script type="text/javascript">
+        function show() {
+            var kor = parseInt(document.form1.kor.value);
+            var eng = parseInt(document.form1.eng.value);
+            var mat = parseInt(document.form1.mat.value);
+
+            if (isNaN(kor) || isNaN(eng) || isNaN(mat)) {
+                alert('점수를 잘못 입력하셨습니다.');
+                reset();
+                return;
+            }
+
+            var sum = kor + eng + mat;
+            var avg = ((kor + eng + mat) / 3).toFixed(2);
+            var grade = 'F';
+            var result = '불합격';
+
+            if (kor >= 40 && eng >= 40 && mat >= 40) {
+                if (avg >= 90) {
+                    grade = 'A';
+                } else if (avg >= 80) {
+                    grade = 'B';
+                } else if (avg >= 70) {
+                    grade = 'C';
+                } else if (avg >= 60) {
+                    grade = 'D';
+                } else {
+                    grade = 'F';
+                }
+
+                if (avg >= 60) {
+                    result = '합격';
+                } else {
+                    result = '불합격';
+                }
+            } else {
+                result = '불합격';
+            }
+
+            var str = '\r\n[시험결과]\r\n\r\n';
+            str += '국어 : ' + kor + '점\r\n';
+            str += '영어 : ' + eng + '점\r\n';
+            str += '수학 : ' + mat + '점\r\n';
+            str += '총점 : ' + sum + '점\r\n';
+            str += '평균 : ' + avg + '점\r\n';
+            str += '등급 : ' + grade + '\r\n';
+            str += '결과 : ' + result;
+
+            alert(str);
+            reset();
+        }
+
+        function reset() {
+            document.form1.kor.value = '';
+            document.form1.eng.value = '';
+            document.form1.mat.value = '';
+        }
+    </script>
+</head>
+
+<body>
+    <form name="form1">
+        <div class="head">
+            <h1>시험 성적 결과 조회</h1>
+        </div>
+        <div class="body">
+            <table id="table1">
+                <thead>
+                    <tr>
+                        <th colspan="2">시험 성적 점수 입력</th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <th colspan="2">
+                            <input type="button" class="tfoot_btn" value="조회" onclick="show();">
+                            <input type="button" class="tfoot_btn" value="재입력" onclick="reset();">
+                        </th>
+                    </tr>
+                </tfoot>
+                <tbody>
+                    <tr>
+                        <th>국 어</th>
+                        <td>
+                            <input type="text" name="kor" class="tbody_text" autofocus>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>영 어</th>
+                        <td>
+                            <input type="text" name="eng" class="tbody_text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>수 학</th>
+                        <td>
+                            <input type="text" name="mat" class="tbody_text">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        function show() {
+            window.alert('경고창 1');
+        }
+
+        function show2() {
+            var result = window.confirm('정말 탈퇴하시겠습니까?');
+            if (result) {
+                window.alert('탈퇴 완료되었습니다.');
+            } else {
+                window.alert('잘 생각하셨습니다.');
+            }
+        }
+
+        function show3() {
+            var str = window.prompt('당신의 이름은 무엇입니까?', '여기에 입력하세요.');
+            alert(str);
+        }
+    </script>
+</head>
+
+<body>
+    <input type="button" value="경고창1" onclick="show();">
+    <input type="button" value="경고창2" onclick="show2();">
+    <input type="button" value="경고창3" onclick="show3();">
+</body>
+
+</html>

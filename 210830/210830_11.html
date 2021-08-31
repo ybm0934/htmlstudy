@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        function autoWrite(){
+            var fullAddr = document.fm.address.value;
+            var zip = fullAddr.substring(1, 6);
+            var addr = fullAddr.substring(8);
+
+            opener.document.join.zip.value = zip;
+            opener.document.join.addr1.value = addr;
+
+            self.close();
+        }
+    </script>
+</head>
+<body>
+    <form name="fm">
+        <fieldset>
+            <legend>주소 검색</legend>
+            <label>주소</label>
+            <input type="text" name="address" size="45">
+            <input type="button" value="주소확인" onclick="autoWrite();">
+        </fieldset>
+    </form>
+</body>
+</html>

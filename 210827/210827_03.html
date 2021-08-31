@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>반복문 실습1</title>
+    <style>
+        #table1 {
+            margin: 0 auto;
+            border-collapse: collapse;
+        }
+
+        #table1 tr td {
+            border: 1px solid black;
+            padding: 0px;
+        }
+
+        #table1 img {
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <table id="table1">
+        <script>
+            var cnt = 1;
+            for (var i = 1; i <= 4; i++) {
+                document.write('<tr>');
+                for (var j = 1; j <= 4; j++) {
+                    document.write('<td>');
+                    document.write('<img src="../img/' + cnt + '.jpg" alt="' + cnt + '번째 아이유" title="' + cnt + '번째 아이유">');
+                    document.write('</td>');
+                    cnt++;
+                }
+                document.write('</tr>');
+            }
+        </script>
+    </table>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>팝업창 테스트</title>
+    <script>
+        function popup(){
+            /*
+                window.open(오픈할 url, 식별자, 옵션)
+                1.width/height : 가로 세로 길이
+                2. left/top : 팝업의 위치
+                3. menubar
+                4. toolbar
+                5. location
+                6. status
+                7. resizable
+            */
+           window.open('210830_08.html', '', 'width=320, height=350, left=50, top=100');
+            
+        }
+    </script>
+</head>
+<body onload="popup();">
+    <h1>이것은 메인 페이지입니다.</h1>
+</body>
+</html>

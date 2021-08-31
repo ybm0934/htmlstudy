@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>월 일수 구하기 프로그램</title>
+    <script>
+        function show(){
+            // 1. 사용자가 입력한 값 회수
+            var mon = parseInt(document.fm.month.value);
+            
+            // 2. 사용자가 입력한 값 판단
+            switch (mon) {
+                case 1: case 3: case 5: case 7: case 8: case 10: case 12: var days = 31; break;
+                case 4: case 6: case 9: case 11: var days = 30; break;
+                case 2: var days = 28; break;
+                default : var days = '잘못된 월을 입력하셨습니다.';
+            }
+
+            window.alert('선택한 월의 일수 : ' + days);
+        }
+    </script>
+</head>
+<body>
+    <h1>월 일수 확인 프로그램</h1>
+    <form name="fm">
+        <labe>월 입력</labe>
+        <input type="text" name="month">
+        <input type="button" value="확인" onclick="show();">
+    </form>
+</body>
+</html>

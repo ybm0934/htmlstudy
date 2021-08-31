@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>전광판 실습(강사님)</title>
+    <script>
+        var str = '지각, 결석을 하지 맙시다... ';
+
+        function scrollNotice() {
+            document.fm.notice.value = str;
+            str = str.substring(1) + str.charAt(0);
+
+            setTimeout('scrollNotice()', 300);
+
+        }
+    </script>
+</head>
+
+<body onload="scrollNotice();">
+    <form name="fm">
+        <label>공지사항 : </label>
+        <input type="text" name="notice" style="border:1px solid gray" ;>
+    </form>
+</body>
+
+</html>

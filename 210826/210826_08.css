@@ -1,0 +1,41 @@
+.head{
+    text-align: center;
+    padding: 30px;
+}
+
+#table1{
+    margin: 0 auto;
+    border: 1px solid lightgray;
+    border-collapse: collapse;
+    width: 500px;
+    height: 400px;
+}
+
+#table1 thead tr th, tfoot tr th, tbody tr th, td{
+    border: 1px solid lightgray;
+    padding: 20px;
+
+}
+
+#table1 tbody tr td{
+    padding-left: 30px;
+}
+
+.tfoot_btn {
+    width: 100px;
+    height: 35px;
+    border:1px solid gray;
+    background-color: white;
+}
+
+.tfoot_btn:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.tbody_text{
+    border:1px solid lightgray;
+    width: 60%;
+    height: 25px;
+}

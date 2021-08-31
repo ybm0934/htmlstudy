@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>날짜 실습</title>
+    <script>
+        var now = new Date();
+        var week = now.getDay();
+
+        switch (week) {
+            case 0:
+                week = '일요일';
+                break;
+            case 1:
+                week = '월요일';
+                break;
+            case 2:
+                week = '화요일';
+                break;
+            case 3:
+                week = '수요일';
+                break;
+            case 4:
+                week = '목요일';
+                break;
+            case 5:
+                week = '금요일';
+                break;
+            case 6:
+                week = '토요일';
+                break;
+        }
+
+        document.write('<h1>오늘은 ' + week + '</h1>');
+    </script>
+</head>
+
+<body>
+    <form name="fm">
+        <select name="year">
+            <script>
+                for (var i = now.getFullYear(); i >= 1900; i--) {
+                    document.write('<option value="' + i + '">' + i + '</option>');
+                }
+            </script>
+        </select>
+        <select name="month">
+            <script>
+                for (var i = 1; i <= 12; i++) {
+                    if (i == now.getMonth() + 1) {
+                        document.write('<option value="' + i + '" selected>' + i + '</option>');
+                    } else {
+                        document.write('<option value="' + i + '">' + i + '</option>');
+                    }
+                }
+            </script>
+        </select>
+        <select name="day">
+            <script>
+                for (var i = 1; i <= 31; i++) {
+                    document.write('<option value="' + i + '"' + (i == now.getDate() ? ' selected' : '') + '>' + i + '</option>');
+                }
+            </script>
+        </select>
+    </form>
+</body>
+
+</html>

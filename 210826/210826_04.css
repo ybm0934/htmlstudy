@@ -1,0 +1,37 @@
+.head{
+    text-align: center;
+    margin: 50px;
+}
+
+.main{
+    text-align: center;
+}
+
+#table1 {
+    margin: 0 auto;
+    border: 1px solid black;
+    width: 700px;
+    height: 100px;
+    border-collapse: collapse;
+}
+
+#table1 tr th, td{
+    padding: 20px;
+}
+
+#table1 tbody tr td{
+    border: 1px solid black;
+}
+
+.menu{
+    width: 100px;
+    height: 50px;
+    background-color: yellow;
+    border: 1px solid lightgray;
+}
+
+.menu:hover{
+    background-color: springgreen;
+    border: 0px;
+    cursor: pointer;
+}

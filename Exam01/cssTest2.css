@@ -1,0 +1,108 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-width: 1000px;
+    
+}
+
+header{
+    text-align: right;
+    padding: 20px;
+    background-color: #f6f6f8;
+}
+
+header .header_div1{
+    display: inline;
+    vertical-align: middle;
+}
+
+.header_div1 a{
+    text-decoration: none;
+    color: gray;
+    padding: 0 20px 0 20px;
+    border-right: 1px solid gray;
+}
+
+.header_div1 a:hover{
+    color: red;
+}
+
+.header_div1 a:last-child{
+    color:red;
+}
+
+header .header_div2{
+    background-color: lime;
+    display: inline;
+    font-size: 0;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+header .search_box {
+    width:150px;
+}
+
+header .search_btn {
+    background-color: white;
+    border: 2px solid gray;
+    cursor: pointer;
+}
+
+nav {
+    margin: 30px;
+    text-align: center;
+}
+
+nav .nav_div1 {
+    display: inline-block;
+    padding-left: 100px;
+}
+
+nav #logo{
+    width: 250px;
+    vertical-align: middle;
+}
+
+nav .nav_div1 ul li{
+    list-style: none;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+nav a{
+    text-decoration: none;
+    color: gray;
+    padding-right: 30px;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+nav .nav_div1 a:hover{
+    color:red;
+}
+
+footer{
+    background-color: #f6f6f8;
+    text-align: center;
+    height: 100px;
+}
+
+.footer_div1{
+    padding-top: 20px;
+}
+footer a{
+    text-decoration: none;
+    color: gray;
+    padding: 40px;
+}
+
+article{
+    text-align: center;
+}
+
+article img{
+    width: 100%;
+    height: 600px;
+}

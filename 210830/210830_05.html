@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>전광판 실습</title>
+    <script>
+        setInterval(function () {
+            board();
+        }, 500);
+
+        var str = '지각, 결석을 하지 맙시다... ';
+        
+        function board() {
+            document.getElementById('spn').innerHTML = '[ ' + str + ' ]';
+
+            var one = str.substr(0, 1);
+            var remain = str.substr(1, str.length);
+
+            str = remain + one;
+        }
+    </script>
+</head>
+
+<body onload="board();">
+    <h1>공지사항 : <span id="spn" style="color:red;"></span></h1>
+</body>
+
+</html>
