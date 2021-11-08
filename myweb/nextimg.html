@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#prev').click(function () {
+                $('#spn2').append($('#spn1'));
+            });
+        });
+    </script>
+    <style>
+        #wrap {
+            text-align: center;
+        }
+
+        #img-div img {
+            width: 300px;
+            height: 300px;
+        }
+
+        #img-div {
+            display: inline-block;
+        }
+
+        .prne {
+            border: 2px solid red;
+            background-color: red;
+            color: white;
+            display: inline-block;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="title">
+            <h1>이미지 슬라이더</h1>
+        </div>
+        <div class="prne" id="prev">PREV</div>
+        <div id="img-div">
+            <span id="spn1">
+                <img src="../img/1.jpg">
+            </span>
+            <span id="spn2">
+                <img src="../img/2.jpg">
+            </span>
+            <span id="spn3">
+                <img src="../img/3.jpg">
+            </span>
+        </div>
+        <div class="prne" id="next">NEXT</div>
+    </div>
+</body>
+
+</html>

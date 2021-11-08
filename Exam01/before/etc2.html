@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        function gogo() {
+            var selected = document.fm.sel.options.selectedIndex;
+            var site = document.fm.sel.options[selected].value;
+
+            location.href = window.open(site);
+
+            event.preventDefault();
+        }
+    </script>
+</head>
+
+<body>
+    <form name="fm" method="get">
+        <select name="sel">
+            <option value="http://www.google.com">구글</option>
+            <option value="http://www.naver.com">네이버</option>
+            <option value="http://www.daum.net">다음</option>
+            <option value="http://www.facebook.com">페이스북</option>
+        </select>
+        <input type="button" onclick="gogo();" value="GO">
+        <input type="button" value="no">
+    </form>
+</body>
+
+</html>

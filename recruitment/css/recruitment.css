@@ -1,0 +1,211 @@
+body {
+    -ms-user-select:none;
+    -moz-user-select:-moz-none;
+    -khtml-user-select:none;
+    -webkit-user-select:none;
+    user-select:none;
+}
+
+#wrap {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+.btn {
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+input:focus {
+    outline: none;
+}
+
+input::placeholder {
+    color: lightgray;
+}
+
+
+/* 헤더 영역 */
+
+header {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+#title_div {
+    color: #3498db;
+    width: 77%;
+    display: table-cell;
+    padding-left: 40px;
+}
+
+#sp1 {
+    font-size: 5em;
+    font-weight: bold;
+}
+
+#sp2 {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#login_div {
+    vertical-align: middle;
+    display: table-cell;
+}
+
+#login_btn {
+    background-color: #3498db;
+    color: white;
+    border:1px solid #3498db;
+    margin-right: 10px;
+}
+
+#regit_btn {
+    background-color: #f4f4f4;
+    color: gray;
+    border:1px solid lightgray;
+}
+
+#regit_btn {
+    background-color: #f4f4f4;
+    color: gray;
+    border:1px solid lightgray;
+}
+
+
+/* 내비게이션 영역 */
+
+nav {
+    background-color: #3498db;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 35px;
+    margin: 0 30px 0 30px;
+}
+
+nav ul li a:hover {
+    background-color: white;
+    color:#3498db;
+}
+
+
+/* 아티클 영역 */
+
+article {
+    margin-bottom: 30px;
+}
+
+#sec1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.textbox {
+    width: 500px;
+    padding: 10px;
+    font-size: 1.5em;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+#sel_loc1 {
+    width: 150px;
+    padding: 10px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color:gray;
+    vertical-align: middle;
+}
+
+#sel_loc2 {
+    width: 150px;
+    padding: 10px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color:gray;
+    vertical-align: middle;
+}
+
+#search_btn {
+    width: 130px;
+    height: 50px;
+    background-color: #3498db;
+    color: white;
+    border:1px solid #3498db;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+#sec2 {}
+
+.sec2_div {
+    width: 255px;
+    border: 1px solid gray;
+    display: inline-block;
+    padding: 30px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.sec2_div h2 {
+    text-align: center;
+}
+
+.sec2_div h3 {}
+
+.sec2_div h4 {
+    color: gray;
+}
+
+
+/* 풋터 영역 */
+
+footer {
+    background-color: #e2e2e2;
+    color: gray;
+    text-align: center;
+    padding: 20px;
+}
+
+#ft_div1 {
+    margin-bottom: 40px;
+}
+
+#ft_div1 ul li {
+    list-style: none;
+}
+
+#ft_div1 ul li a {
+    text-decoration: none;
+    padding: 20px;
+    color: gray;
+}
+
+#ft_div2 {
+    margin-bottom: 20px;
+}
+
+#ft_div2 span {
+    margin: 0 10px 0 10px;
+}
+
+#ft_div3 {
+    margin-bottom: 10px;
+}

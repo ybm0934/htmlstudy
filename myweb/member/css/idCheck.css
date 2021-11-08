@@ -1,0 +1,36 @@
+#idCheck_div {
+    margin: 0 auto;
+    text-align: center;
+}
+
+#top {
+    margin-top: 30px;
+    padding: 15px;
+}
+
+#top .textbox {
+    padding: 13px;
+    vertical-align: middle;
+}
+
+#print {
+    padding: 15px;
+    color: red;
+    font-weight: bold;
+}
+
+#bottom {
+    padding: 15px;
+}
+
+.btn {
+    border: 1px solid #be4646;
+    background-color: #be4646;
+    color: white;
+    font-size: 15px;
+    width: 80px;
+    height: 45px;
+    font-weight: bold;
+    vertical-align: middle;
+    cursor: pointer;
+}

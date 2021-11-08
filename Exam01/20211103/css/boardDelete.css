@@ -1,0 +1,29 @@
+#wrap {
+    width: 50%;
+    margin: 0 auto;
+}
+
+fieldset {
+    width: 50%;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.box {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.boxDiv {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.btn {
+    border: 1px solid lightgray;
+    background-color: #eeeeee;
+    width: 70px;
+    height: 40px;
+    cursor: pointer;
+}

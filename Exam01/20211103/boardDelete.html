@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>게시글 삭제</title>
+    <link rel="stylesheet" href="css/boardDelete.css">
+</head>
+<body>
+<div id="wrap">
+    <form name="boardDelete" method="post" action="/boardDelete.do">
+        <fieldset>
+            <legend>글을 삭제하시겠습니까?</legend>
+            <div class="boxDiv">
+                <input type="password" name="pwd" class="box" placeholder="비밀번호를 입력하세요." maxlength="20" required>
+            </div>
+            <div class="boxDiv">
+                <input type="button" value="취소" class="btn" onclick="location.href='boardDetail.do?no='">
+                <input type="submit" value="삭제" class="btn">
+            </div>
+        </fieldset>
+    </form>
+</div>
+</body>
+</html>

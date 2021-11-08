@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>사원 정보 보기</title>
+    <link rel="stylesheet" type="text/css" href="empList.css">
+</head>
+<body>
+    <div id="article">
+        <div id="section">
+            <h1>사원 관리 프로그램</h1>
+            <form name="empAdd" id="empAdd" method="post" action="empAdd_ok.jsp">
+                <fieldset>
+                    <legend>사원보기</legend>
+                    <table id="tb1">
+                        <tr>
+                            <th>사원이름</th>
+                            <td>
+                                <input type="text" name="name" class="box" readonly>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>E-mail</th>
+                            <td>
+                                <input type="text" name="email" class="box" readonly>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>부서명</th>
+                            <td>
+                                <input type="text" name="dept" class="box" readonly>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" align="center">
+                                <input type="button" value="수정하기" class="btn btn1" id="edit">
+                                <input type="button" value="삭제하기" class="btn btn2" id="delete">
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

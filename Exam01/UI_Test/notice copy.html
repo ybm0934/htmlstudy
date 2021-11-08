@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        #wrap {
+            width: 70%;
+            margin: 0 auto;
+        }
+        
+        #notice {
+            width: 100%;
+            border: 1px solid gray;
+            border-collapse: collapse;
+        }
+
+        #notice caption {
+            visibility: hidden;
+        }
+        
+        #notice tr th {
+            padding: 15px;
+            background-color: #333333;
+            color: white;
+        }
+
+        #notice tr td {
+            border-bottom: 1px solid lightgray;
+            padding: 10px;
+        }
+
+        #notice tr td:not(:nth-child(2)) {
+            text-align: center;
+        }
+
+        #notice img {
+            width: 20px;
+        }
+
+        #search {
+            text-align: center;
+            margin: 30px;
+        }
+
+        #search select {
+            padding: 10px;
+            vertical-align: middle;
+        }
+
+        #search input[type=text] {
+            padding: 10px;
+            vertical-align: middle;
+        }
+        
+        #search button {
+            padding: 10px;
+            background-color: #333333;
+            color: white;
+            border: 0;
+            width: 80px;
+            vertical-align: middle;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+<div id="wrap">
+    <h1>자유 게시판</h1>
+    <table id="notice">
+        <caption>자유 게시판 테이블</caption>
+        <colgroup>
+            <col width="10%;">
+            <col width="*;">
+            <col width="10%">
+            <col width="10%">
+            <col width="15%">
+        </colgroup>
+        <thead>
+            <tr>
+                <th>번호</th>
+                <th>제목</th>
+                <th>첨부</th>
+                <th>조회</th>
+                <th>등록일</th>
+            </tr>
+        </thead>
+        <tfoot></tfoot>
+        <tbody>
+            <tr>
+                <td>120</td>
+                <td>중소기업 혁신지원단 평가위원 등록 안내</td>
+                <td>
+                    <img src="disk.png">
+                </td>
+                <td>0</td>
+                <td>2021.10.22.</td>
+            </tr>
+            <tr>
+                <td>120</td>
+                <td>서울 디자인 프론티어기업 육성 사업 결과 전시</td>
+                <td>
+                    <img src="disk.png">
+                </td>
+                <td>0</td>
+                <td>2021.10.22.</td>
+            </tr>
+            <tr>
+                <td>120</td>
+                <td>디자인계 역사 DB화를 위한 디자인 사료 기증 캠페인 안내</td>
+                <td>
+                    <img src="disk.png">
+                </td>
+                <td>0</td>
+                <td>2021.10.22.</td>
+            </tr>
+            <tr>
+                <td>120</td>
+                <td>2021년 상반기 designdb 우수리포트 선정 EVENT</td>
+                <td>
+                    <img src="disk.png">
+                </td>
+                <td>0</td>
+                <td>2021.10.22.</td>
+            </tr>
+            <tr>
+                <td>120</td>
+                <td>KIDP 사업평가위원 모집</td>
+                <td>
+                    <img src="disk.png">
+                </td>
+                <td>0</td>
+                <td>2021.10.22.</td>
+            </tr>
+            <tr>
+                <td>120</td>
+                <td>2021년도 서울 주관기업 추가</td>
+                <td>
+                    <img src="disk.png">
+                </td>
+                <td>0</td>
+                <td>2021.10.22.</td>
+            </tr>
+            <tr>
+                <td>120</td>
+                <td>디자인주도 융합R&D 프로세스 개발사업의 디자인</td>
+                <td>
+                    <img src="disk.png">
+                </td>
+                <td>0</td>
+                <td>2021.10.22.</td>
+            </tr>
+            <tr>
+                <td>120</td>
+                <td>중소기업 혁신지원단 평가위원 등록 안내</td>
+                <td>
+                    <img src="disk.png">
+                </td>
+                <td>0</td>
+                <td>2021.10.22.</td>
+            </tr>
+            <tr>
+                <td>120</td>
+                <td>서울 디자인 프론티어기업 육성 사업 결과 전시</td>
+                <td>
+                    <img src="disk.png">
+                </td>
+                <td>0</td>
+                <td>2021.10.22.</td>
+            </tr>
+            <tr>
+                <td>120</td>
+                <td>디자인계 역사 DB화를 위한 디자인 사료 기증 캠페인 안내</td>
+                <td>
+                    <img src="disk.png">
+                </td>
+                <td>0</td>
+                <td>2021.10.22.</td>
+            </tr>
+            <tr>
+                <td>120</td>
+                <td>2021년 상반기 designdb 우수리포트 선정 EVENT</td>
+                <td>
+                    <img src="disk.png">
+                </td>
+                <td>0</td>
+                <td>2021.10.22.</td>
+            </tr>
+            <tr>
+                <td>120</td>
+                <td>KIDP 사업평가위원 모집</td>
+                <td>
+                    <img src="disk.png">
+                </td>
+                <td>0</td>
+                <td>2021.10.22.</td>
+            </tr>
+            <tr>
+                <td>120</td>
+                <td>2021년도 서울 주관기업 추가</td>
+                <td>
+                    <img src="disk.png">
+                </td>
+                <td>0</td>
+                <td>2021.10.22.</td>
+            </tr>
+            <tr>
+                <td>120</td>
+                <td>디자인주도 융합R&D 프로세스 개발사업의 디자인</td>
+                <td>
+                    <img src="disk.png">
+                </td>
+                <td>0</td>
+                <td>2021.10.22.</td>
+            </tr>
+        </tbody>
+    </table>
+    <div id="search">
+        <select>
+            <option>제목</option>
+            <option>내용</option>
+            <option>작성자</option>
+        </select>
+        <input type="text">
+        <button>검색</button>
+    </div>
+</div>
+</body>
+</html>

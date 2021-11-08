@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+/* 게시판 리스트 CSS */
+
+#wrap {
+    margin: 0 auto;
+}
+
+#wrap h1 {
+    text-align: center;
+}
+
+.btn {
+    width: 80px;
+    height: 40px;
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.btn:active {
+    background-color: gray;
+}
+
+
+/* 테이블 영역 */
+
+#list_table {
+    margin: 30px auto;
+    border: 1px solid lightgray;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#list_table thead tr th {
+    border: 1px solid lightgray;
+    padding: 10px;
+}
+
+#list_table tfoot tr td {}
+
+#list_table tbody tr td:not(:nth-child(2)) {
+    text-align: center;
+    padding: 10px;
+}
+
+#list_table tbody tr td:nth-child(2) {
+    padding-left: 10px;
+}
+
+.title_link {
+	text-decoration: none;
+}
+
+.title_link:hover {
+	font-weight: bold;
+}
+
+
+/* 게시판 하단 영역 */
+
+.list_foot_div {
+    text-align: right;
+}
+
+.list_search_div {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#select {
+    padding: 10px;
+    vertical-align: middle;
+}
+
+input:focus {
+    outline: none;
+}
+
+.textbox {
+    padding: 10px;
+    vertical-align: middle;
+}
+
+.list_paging_div {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.list_paging_div span {
+    margin: 10px;
+}
+
+.list_paging_div span a {
+    text-decoration: none;
+    font-size: 1.5em;
+    color: black;
+}

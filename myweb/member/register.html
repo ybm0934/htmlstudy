@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/register.css">
+    <script>
+    </script>
+</head>
+<body>
+    <div id="register_div">
+        <form name="register" method="post" action="">
+        <div id="logo_div">
+            <img src="img/register_logo.png" alt="회원가입 로고">
+        </div>
+        <div id="id_div">
+            <h3>아이디</h3>
+            <div class="box">
+                <input type="text" name="id" class="textbox" placeholder="아이디를 입력하세요." readonly>
+                <input type="button" id="duplbtn" class="btn" value="중복검사">
+            </div>
+            <span id="id_error" class="error"></span>
+        </div>
+        <div id="password_div">
+            <h3>비밀번호</h3>
+            <div class="box">
+                <input type="password" name="password" class="textbox">
+            </div>
+            <span id="password_error" class="error"></span>
+        </div>
+        <div id="password_ok_div">
+            <h3>비밀번호 확인</h3>
+            <div class="box">
+                <input type="password" name="password_ok" class="textbox">
+            </div>
+            <span id="password_ok_error" class="error"></span>
+        </div>
+        <div id="name_div">
+            <h3>이름</h3>
+            <div class="box">
+                <input type="text" name="name" class="textbox">
+            </div>
+            <span id="name_error" class="error"></span>
+        </div>
+        <div id="birthday_div">
+            <h3>생년월일</h3>
+            <span class="birth_box">
+                <input type="text" id="birth_year" class="birth_textbox" placeholder="년(4자)">
+            </span>
+            <span class="birth_box">
+                <select id="birth_monday">
+                    <option value="">월</option>
+                </select>
+            </span>
+            <span class="birth_box">
+                <input type="text" id="birth_day" class="birth_textbox" placeholder="일">
+            </span>
+            <input type="hidden" name="birthday" value="">
+            <span id="birth_error" class="error"></span>
+        </div>
+        <div id="gender_div">
+            <h3>성별</h3>
+            <div>
+                <select id="gender" name="gender">
+                    <option value="">성별</option>
+                    <option value="남자">남자</option>
+                    <option value="여자">여자</option>
+                </select>
+            </div>
+            <span id="gender_error" class="error"></span>
+        </div>
+        <div id="email_div">
+            <h3>이메일</h3>
+            <div class="box">
+                <input type="text" name="email" class="textbox" placeholder="선택입력">
+            </div>
+            <span id="email_error" class="error"></span>
+        </div>
+        <div id="tel_div">
+            <h3>전화번호</h3>
+            <span class="tel_box1">
+                <select id="tel1" name="tel1">
+                    <option value="010">010</option>
+                    <option value="011">011</option>
+                    <option value="012">012</option>
+                    <option value="013">013</option>
+                    <option value="014">014</option>
+                    <option value="015">015</option>
+                    <option value="016">016</option>
+                </select>
+            </span>
+            <span class="tel_box2">
+                <input type="text" name="tel2" id="tel2" class="textbox" placeholder="전화번호 입력">
+            </span>
+            <span id="tel_error" class="error"></span>
+        </div>
+        <div id="button_div">
+            <input type="submit" id="regbtn" class="btn" value="가입하기">
+        </div>
+    </form>
+    </div>
+</body>
+</html>

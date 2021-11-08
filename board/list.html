@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>자유 게시판</title>
+    <link rel="stylesheet" type="text/css" href="css/list.css">
+</head>
+<body>
+    <div id="wrap">
+        <form name="list" method="post" action=""></form>
+        <h1>자유 게시판</h1>
+        <table id="list_table">
+            <thead>
+                <tr>
+                    <th width="10%;">번호</th>
+                    <th>제목</th>
+                    <th width="10%;">작성자</th>
+                    <th width="15%;">등록일</th>
+                    <th width="10%;">조회수</th>
+                </tr>
+            </thead>
+            <tfoot></tfoot>
+            <tbody>
+            	<% %>
+                <tr>
+                	<td></td>
+                	<td>
+                		<a href="#" class="title_link"></a>
+                	</td>
+                	<td></td>
+                	<td></td>
+                	<td></td>
+                </tr>
+            	<% %>
+            </tbody>
+        </table>
+        <div class="list_foot_div">
+            <input type="button" name="write_btn" class="btn" id="write_btn" value="글쓰기">
+        </div>
+        <div class="list_search_div">
+            <select id="select">
+                <option value="title">제목</option>
+                <option value="name">작성자</option>
+                <option value="content">내용</option>
+            </select>
+            <input type="text" class="textbox" id="search_box">
+            <input type="button" class="btn" id="search_btn" value="검색">
+        </div>
+        <div class="list_paging_div">
+            <span>
+                <a href="#"></a>
+            </span>
+        </div>
+    </div>
+</body>
+</html>

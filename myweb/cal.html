@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>사칙 계산기</title>
+    <link rel="stylesheet" type="text/css" href="cal.css">
+</head>
+
+<body>
+    <form name="fm" method="post" action="cal_ok.jsp">
+    <div id="cal-div">
+        <h1>사칙 계산기</h1>
+        <div id="cal-div-1">
+            <input type="text" name="num1" class="txtbox" placeholder="첫 번째 숫자를 입력하세요.">
+            <select id="sel">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+            </select>
+            <input type="text" name="num2" class="txtbox" placeholder="두 번째 숫자를 입력하세요.">
+        </div>
+        <div id="cal-div-2">
+            <input type="submit" value="계산" class="btn">
+            <input type="reset" value="취소" class="btn">
+        </div>
+    </div>
+    </form>
+</body>
+
+</html>
